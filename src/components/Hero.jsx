@@ -6,7 +6,7 @@ const Hero = () => {
     // THE ONLY CHANGE IS HERE: flex-col is now flex-col-reverse
     <main className="flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between min-h-[calc(90vh-6rem)] gap-12 lg:gap-4 px-12">
       {/* This text block will now appear AFTER the model on mobile */}
-      <div className="max-w-xl text-center lg:text-left z-10 w-full">
+      <div data-aos="fade-right" className="max-w-xl text-center lg:text-left z-10 w-full">
         <div className="relative w-[95%] sm:w-48 h-10 bg-gradient-to-r from-[#656565] to-[#e99b63] shadow-[0_0_15px_rgba(255,255,255,00.4)] rounded-full mx-auto lg:mx-0">
           <div className="absolute inset-[3px] bg-black rounded-full flex items-center justify-center gap-4">
             <i className="bx bx-diamond"></i>
@@ -37,7 +37,7 @@ const Hero = () => {
       </div>
 
       {/* This model will now appear BEFORE the text on mobile */}
-      <div className="w-full md:w-3/4 lg:w-1/2 h-[400px] lg:h-full">
+      <div data-aos="zoom-in" data-aos-duration="3000" className="w-full md:w-3/4 lg:w-1/2 h-[400px] lg:h-full">
         <Spline scene="https://prod.spline.design/Zb3zEGQR8WLGIBSs/scene.splinecode" />
       </div>
     </main>
